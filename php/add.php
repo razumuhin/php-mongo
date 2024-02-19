@@ -31,11 +31,11 @@ $conn->close();
 if(move_uploaded_file($_FILES['photo']['tmp_name'],$target)) 
 { 
 echo "Dosya ". basename( $_FILES['uploadedfile']
-['name']). " basarili bir sekilde sunucuya yuklendi ve diger kayitlar da veritabanına basarili sekilde girildi"; 
+['name']). " kayit basarili"; 
  } 
  else { 
  
-echo "Dosyayi yuklerken hata olustu"; 
+echo "Dosyayi yuklerken hata olustu, ya da dosya yuklemediniz"; 
  } 
 ?>
 <p>
